@@ -1,0 +1,21 @@
+# Ambientes virtuais
+venv_backend/
+.env
+*.env
+
+# Arquivos de log
+*.log
+
+# Configurações específicas de IDE
+.vscode/
+.idea/
+
+# Caches do Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Dependências
+*.egg-info/
+dist/
+build/s
