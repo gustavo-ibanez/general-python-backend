@@ -1,0 +1,5 @@
+Flask>=2.1.1
+requests>=2.0.0
+pymongo>=4.10.0
+Flask-PyMongo>=2.3.0
+flask-cors>=5.0.0
