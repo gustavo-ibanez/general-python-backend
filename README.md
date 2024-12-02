@@ -1,48 +1,65 @@
-## BackEnd - local sem docker (linux)
+# Project Python BackEnd
 
-    ### iniciar o mongodb
-    sudo systemctl start mongod
-    ### Para rodar, acessar a pasta backend e rodar o comando abaixo:
-    python wsgi.py 
+Project to study and learn backEnd python project
 
-# Python BackEnd
+## Table of Contents
+- [About](#about)
+- [Installation](#installation)
+- [Use](#use)
+- [Example](#example)
+- [Technologies](#technologies)
+- [Contribution](#contribuição)
+- [TODO](#todo)
 
-Project to learn python flask
+## About 
 
-## Tecnology
+Project to study and learn backEnd python project
+
+[Git](https://github.com/gustavo-ibanez/)
+
+## Installation
+
+- git clone https://github.com/gustavo-ibanez/general-python-backend.git
+- cd general-python-backend
+
+    #### Create the virtual environment (linux)
+        - python3 -m venv venv
+        - source venv/bin/activate 
+        - pip install -r requirements.txt
+
+    #### Create the virtual environment (windows)
+        - python3 -m venv venv
+        - .\venv\Scripts\activate
+        - pip install -r requirements.txt
+ 
+
+## Use
+
+- You can run using docker or locally
+
+    #### run with docker
+        - docker-compose build
+        - docker-compose up
+
+    #### run locally
+        - sudo systemctl start mongod (start mongodb)
+        - python wsgi.py 
+
+## Example
+
+    - Url Postman
+
+## Technologies
 
 - Python
+- MongoDb
 - Flask
-- mongoDb
 
-## How to Run the project
+## Contribution    
 
-1. Clone o repository:
-   ```bash
-   git clone https://github.com/gustavo-ibanez/general-python-backend.git
-
-
-   ```iniciar o mongodb (linux)
-   sudo systemctl start mongod
-
-   ```run
-   python wsgi.py 
-
-   ```run with docker
-   docker-compose build
-   docker-compose up
+- not available    
 
 ## TODO
-    ### Colocar duas linguas no site
 
+    - Insert two language
 
-## criar e ativar venv windows
-
-    - criar
-    python -m venv venv
-
-    - ativar
-    .\venv\Scripts\activate
-
-    - desativar
-    deactivate
