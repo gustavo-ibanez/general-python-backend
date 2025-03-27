@@ -8,7 +8,7 @@ class Config:
    
     KEY_EXCHANGE = None
     WEATHER_KEY = None
-    #MONGO_URI = "mongodb://localhost:27017/mydatabase"  # pra rodar sem docker
+    MONGO_URI_LOCAL = "mongodb://localhost:27017/mydatabase"
     MONGO_URI = "mongodb://mongodb:27017/mydatabase"
 
 class ProductionConfig(Config):
@@ -20,20 +20,20 @@ class TestingConfig(Config):
     WEATHER_KEY = ""
 
 def get_config():
-    env = os.getenv('FLASK_ENV', 'testing')
+    env = os.getenv('FLASK_ENV', 'development')
     if env == 'production':
         return ProductionConfig()    
     return TestingConfig()
     
 
 def getExchangeRates():
-    env = os.getenv('FLASK_ENV', 'testing')
+    env = os.getenv('FLASK_ENV', 'development')
     if env == 'production': 
         return ExchangeRatesImpl()
     return ExchangeRatesMock()
 
 def getWeather():
-    env = os.getenv('FLASK_ENV', 'testing')
+    env = os.getenv('FLASK_ENV', 'development')
     if env == 'production': 
         return WeatherImpl()
     return WeatherMock()
