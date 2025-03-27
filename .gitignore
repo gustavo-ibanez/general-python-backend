@@ -10,6 +10,11 @@ venv_backend/
 .vscode/
 .idea/
 
+# Virtual environments
+env/
+venv/
+.venv/
+
 # Caches do Python
 *.pyc
 *.pyo
